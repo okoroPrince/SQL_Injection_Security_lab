@@ -8,10 +8,10 @@
 </head>
 <body class="body">
     <h1>Welcome</h1>
-    <a href="http://127.0.0.1:5000/vulnerable_login">
+    <a href="{{ url_for('vulnerable_login') }}">
         <div class="login_link">Vulnerable Login</div>
     </a>
-    <a href="http://127.0.0.1:5000/secure_login">
+    <a href="{{ url_for('secure_login') }}">
         <div class="login_link">Secure Login</div>
     </a>
 </body>

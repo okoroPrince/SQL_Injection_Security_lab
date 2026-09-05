@@ -41,9 +41,9 @@ def vul_login():
             exists = cursor.fetchall()
 
             if exists:
-                return "Login successful (SQL injecttion worked or you just used the correct password)"
+                return "Login successful (SQL injecttion worked👍 or you just used the correct password😭 try the SQL query)"
             else:
-                return "Login failed try login again (make sure you used 'UNION SELECT * FROM users)"
+                return "Login failed try login again (make sure you used 'UNION SELECT * FROM users --)"
 
     return render_template("vulnerable_login.html")
 
@@ -63,7 +63,7 @@ def secure_login():
             if exists:
                 return "Login successful YOU ARE IN"
             else:
-                return "Login failed try login again (o boy SQL injection will not work here)"
+                return "Login failed try login again (SQL injection will not work here😁)"
 
     return render_template("secure_login.html")
 if __name__ == "__main__":

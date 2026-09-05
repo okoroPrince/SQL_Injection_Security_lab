@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="form_box">
-        <form action="/login" method="post" id="form">
+        <form action="{{ url_for('vul_login') }}" method="post" id="form">
             <h1>I am vulnerable</h1>
             <input type="text" name="username" id="username" placeholder="Enter username">
             <input type="password" name="password" id="password" placeholder="Enter password">

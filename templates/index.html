@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename = '/style.css') }}">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>SQL Injection Security Lab</title>
 </head>
+
 <body class="body">
-    <h1>Welcome</h1>
-    <a href="{{ url_for('secure_login') }}">
+
+    <h1>SQL Injection Security Lab</h1>
+
+    <p class="disclaimer">
+        ⚠️ This website is an educational cybersecurity lab designed to
+        demonstrate SQL injection vulnerabilities and their prevention.
+        Do not enter real passwords or sensitive information.
+    </p>
+
+    <a href="{{ url_for('vulnerable_login') }}">
         <div class="login_link">Vulnerable Login</div>
     </a>
+
     <a href="{{ url_for('secure_login') }}">
         <div class="login_link">Secure Login</div>
     </a>
+
 </body>
 </html>

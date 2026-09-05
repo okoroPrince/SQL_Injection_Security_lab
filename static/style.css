@@ -41,6 +41,38 @@ a:hover {
     transform: scale(1.05);
 }
 
+.disclaimer {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 15px 20px;
+
+    background-color: #fff3cd;
+    border: 1px solid #ffe69c;
+    border-radius: 8px;
+
+    color: #664d03;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.login_link {
+    background-color: #333;
+    color: white;
+
+    padding: 12px 30px;
+    margin: 10px;
+
+    border-radius: 8px;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.login_link:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
 
 /* ======================
    LOGIN PAGE STYLING
